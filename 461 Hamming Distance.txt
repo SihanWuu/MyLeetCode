@@ -1,0 +1,15 @@
+class Solution {
+    public int hammingDistance(int x, int y) {
+        int differentNum = 0;
+        
+		char[] xorBinary = Integer.toBinaryString(x ^ y).toCharArray();
+        
+        for(int i = 0; i < xorBinary.length; i++) {
+        	if (xorBinary[i] == '1') {
+        		differentNum++;
+        	}
+        }
+        
+        return differentNum;
+    }
+}

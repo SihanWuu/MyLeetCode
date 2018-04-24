@@ -1,0 +1,11 @@
+class Solution {
+    public String reverseString(String s) {
+        char[] result = new char[s.length()];
+	        for(int i = 0; i < s.length(); i++) {
+	        	result[i] = s.charAt(s.length() - 1 - i);
+	        }
+		 
+	        String str = new String(result);
+		 	return str;
+    }
+}
