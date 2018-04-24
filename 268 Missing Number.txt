@@ -1,0 +1,15 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int sumNums = 0;
+        int sum = 0;
+        int i;
+        
+		for(i = 0; i < nums.length; i++) {
+			sum += i;
+			sumNums += nums[i];
+        }
+		sum += i;
+		
+		return sum - sumNums;
+    }
+}
