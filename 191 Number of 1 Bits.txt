@@ -1,0 +1,16 @@
+public class Solution {
+    // you need to treat n as an unsigned value
+    public int hammingWeight(int n) {
+        int num = 0;
+        
+		char[] nBinary = Integer.toBinaryString(n).toCharArray();
+        
+        for(int i = 0; i < nBinary.length; i++) {
+        	if(nBinary[i] == '1') {
+        		num++;
+        	}
+        }
+        
+        return num;
+    }
+}
