@@ -1,0 +1,19 @@
+package LeetCodeTest;
+
+public class Test {
+	
+	public static int titleToNumber(String s) {
+        char[] ch = s.toCharArray();
+        int len = ch.length;
+        int result = 0;
+ 
+        for(int i = (len - 1); i >= 0; i--) {
+        	result += ((char) (ch[i] - 16) - '0') * Math.pow(26, (len - 1 - i));
+        }
+        return result;
+    }
+	
+	public static void main(String[] args) {
+		System.out.println(titleToNumber("AAA"));
+	}
+}
