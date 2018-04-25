@@ -1,5 +1,3 @@
-package LeetCodeTest;
-
 public class Test {
 	
 	public static int titleToNumber(String s) {
